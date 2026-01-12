@@ -13,6 +13,16 @@
     </div>
 
     <div class="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
+        @if ($errors->any())
+            <div class="mb-4 p-3 bg-red-100 text-red-700 rounded">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+        
         <form method="POST"
               action="{{ route('tickets.store') }}"
               enctype="multipart/form-data"
