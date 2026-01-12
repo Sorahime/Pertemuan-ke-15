@@ -63,7 +63,7 @@
         @endif
     </div>
 
-    <!-- Komentar -->
+    <!-- Comment -->
     <div class="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
         <h2 class="text-lg font-bold text-gray-800 dark:text-gray-100 mb-4">
             💬 Komentar
